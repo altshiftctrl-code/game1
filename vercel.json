@@ -1,6 +1,7 @@
 {
   "version": 2,
   "routes": [
+    { "src": "/tools/ci(.*)", "dest": "https://ci-seven.vercel.app$1" },
     { "src": "/game1/(.*)", "dest": "/game1/$1" },
     { "src": "/game1", "dest": "/game1/index.html" },
     { "src": "/(.*)", "dest": "/$1" }
