@@ -1,0 +1,59 @@
+# システムや個人データを守る
+/Users/*/Documents
+/Users/*/Pictures
+/Users/*/Desktop/* (開発用フォルダ以外)
+.env          # パスワードなどが書いてある設定ファイル
+.git          # 履歴データそのもの（壊されると困る）
+node_modules  # 巨大なライブラリ群（読み込ませると重くなる）
+
+# Dependency directories
+node_modules/
+bower_components/
+
+# Build outputs
+dist/
+build/
+out/
+bin/
+obj/
+
+# Logs and databases
+*.log
+*.sqlite
+*.db
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Large media files
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.mp4
+*.pdf
+
+# Cache and temporary files
+.cache/
+.npm/
+.eslintcache
+.stylelintcache
+
+# Version control
+.git/
+.svn/
+.hg/
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Project specific (Optional)
+# 巨大なデータセットやドキュメントがある場合は追記
+# data/
+# docs/
+
