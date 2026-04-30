@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "cleanUrls": true,
   "rewrites": [
     { "source": "/tools/ci", "destination": "https://ci-seven.vercel.app/index.html" },
     { "source": "/tools/ci/:path*", "destination": "https://ci-seven.vercel.app/:path*" }

@@ -3,72 +3,126 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>2b.network Portal</title>
+  <title>2B networks</title>
+  <link rel="stylesheet" href="/assets/style.css">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background: #1a1a2e;
-      color: #eee;
-      font-family: 'Courier New', monospace;
+    /* Hero */
+    .hero {
+      min-height: calc(100vh - 52px);
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      min-height: 100vh;
+      text-align: center;
+      padding: 80px 24px;
     }
-    h1 {
-      font-size: 2rem;
-      letter-spacing: 4px;
-      color: #e94560;
-      margin-bottom: 8px;
+
+    .hero-logo {
+      width: 400px;
+      margin-bottom: 36px;
     }
-    p.subtitle {
-      color: #666;
-      font-size: 0.85rem;
-      letter-spacing: 2px;
+
+    .hero h1 {
+      font-size: clamp(52px, 9vw, 88px);
+      font-weight: 700;
+      letter-spacing: -2.5px;
+      line-height: 1.02;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 19px;
+      color: var(--text-secondary);
+      max-width: 480px;
+      line-height: 1.65;
+      margin-bottom: 44px;
+    }
+
+    /* Services preview */
+    .services-section {
+      background: var(--bg-secondary);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 80px 24px;
+    }
+
+    .services-section-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .services-section h2 {
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: -1px;
       margin-bottom: 48px;
     }
-    .games {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-    .games h2 {
-      font-size: 0.75rem;
-      letter-spacing: 3px;
-      color: #555;
-      text-transform: uppercase;
-      margin-bottom: 4px;
-    }
-    a.game-link {
-      display: block;
-      padding: 16px 32px;
-      border: 1px solid #333;
-      color: #eee;
+
+    .view-all {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      margin-top: 32px;
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--accent-start);
       text-decoration: none;
-      letter-spacing: 2px;
-      font-size: 1rem;
-      transition: border-color 0.2s, color 0.2s;
     }
-    a.game-link:hover {
-      border-color: #e94560;
-      color: #e94560;
-    }
-    a.game-link span {
-      font-size: 0.75rem;
-      color: #555;
-      margin-left: 12px;
-    }
+
+    .view-all:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
-  <h1>2b.network</h1>
-  <p class="subtitle">PORTAL</p>
-  <div class="games">
-    <h2>Games</h2>
-    <a class="game-link" href="/game1">TETRIS<span>game1</span></a>
-    <h2 style="margin-top:16px;">Tools</h2>
-    <a class="game-link" href="/tools/ci">複利シミュレーター<span>tools/ci</span></a>
+
+  <header>
+    <div class="header-inner">
+      <a href="/" class="logo-link">
+        <img src="/assets/logo.png" alt="2bnetworks">
+        <span>2B networks</span>
+      </a>
+      <nav>
+        <a href="/" class="active">Home</a>
+        <a href="/services">Services</a>
+        <a href="/about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <img src="/assets/logo.png" alt="" class="hero-logo">
+    <h1><span class="gradient-text">2B networks</span></h1>
+    <p>個人開発者によるこだわりのプロダクトを、世界へ。</p>
+    <a href="/services" class="btn">View Services</a>
+  </section>
+
+  <div class="services-section">
+    <div class="services-section-inner">
+      <p class="section-label">Services</p>
+      <h2>開発中のプロダクト</h2>
+      <div class="services-grid">
+        <a class="service-card" href="/services">
+          <div class="service-icon">📈</div>
+          <div class="service-name">Sector Nexus</div>
+          <p class="service-desc">セクター分析を軸にしたトレード支援アプリ。市場の流れを可視化し、投資判断をサポートします。</p>
+          <span class="badge badge-dev">In Development</span>
+        </a>
+        <a class="service-card" href="/services">
+          <div class="service-icon">🎵</div>
+          <div class="service-name">Sound Studio</div>
+          <p class="service-desc">誰でも直感的に音楽制作を楽しめるWebアプリ。作曲・編曲からシェアまでをワンストップで。</p>
+          <span class="badge badge-dev">In Development</span>
+        </a>
+      </div>
+      <a href="/services" class="view-all">すべてのサービスを見る →</a>
+    </div>
   </div>
+
+  <footer>
+    <div class="footer-inner">
+      <img src="/assets/logo.png" alt="2bnetworks">
+      <p>© 2026 2B networks. All rights reserved.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
