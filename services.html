@@ -62,35 +62,9 @@
 
   <div class="services-body">
     <div class="services-body-inner">
-      <div class="services-grid">
-
-        <a class="service-card" href="#">
-          <div class="service-icon">📈</div>
-          <div class="service-name">Sector Nexus</div>
-          <p class="service-desc">セクター分析を軸にしたトレード支援アプリ。市場の流れを可視化し、投資判断をサポートします。リアルタイムデータをもとに、自分だけの分析環境を構築できます。</p>
-          <span class="badge badge-dev">In Development</span>
-        </a>
-
-        <a class="service-card" href="#">
-          <div class="service-icon">🎵</div>
-          <div class="service-name">Sound Studio</div>
-          <p class="service-desc">誰でも直感的に音楽制作を楽しめるWebアプリ。作曲・編曲からシェアまでをワンストップで。専門知識がなくても、アイデアをすぐに形にできます。</p>
-          <span class="badge badge-dev">In Development</span>
-        </a>
-
-        <a class="service-card" href="#">
-          <div class="service-icon">📚</div>
-          <div class="service-name">Book Store</div>
-          <p class="service-desc">厳選された書籍をオンラインで購入できるブックストア。技術書・ビジネス書を中心に、知識を深めるための一冊を見つけられます。</p>
-          <span class="badge badge-dev">In Development</span>
-        </a>
-
-        <div class="service-card placeholder">
-          <span style="font-size:22px;">＋</span>
-          <span>More coming soon</span>
-        </div>
-
-      </div>
+      <div class="services-grid" id="services-grid"></div>
+      <script src="/assets/services.js"></script>
+      <script>renderServices('services-grid', { placeholder: true });</script>
     </div>
   </div>
 

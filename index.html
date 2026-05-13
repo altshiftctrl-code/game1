@@ -99,21 +99,10 @@
     <div class="services-section-inner">
       <p class="section-label">Services</p>
       <h2>開発中のプロダクト</h2>
-      <div class="services-grid">
-        <a class="service-card" href="/services">
-          <div class="service-icon">📈</div>
-          <div class="service-name">Sector Nexus</div>
-          <p class="service-desc">セクター分析を軸にしたトレード支援アプリ。市場の流れを可視化し、投資判断をサポートします。</p>
-          <span class="badge badge-dev">In Development</span>
-        </a>
-        <a class="service-card" href="/services">
-          <div class="service-icon">🎵</div>
-          <div class="service-name">Sound Studio</div>
-          <p class="service-desc">誰でも直感的に音楽制作を楽しめるWebアプリ。作曲・編曲からシェアまでをワンストップで。</p>
-          <span class="badge badge-dev">In Development</span>
-        </a>
-      </div>
+      <div class="services-grid" id="services-grid"></div>
       <a href="/services" class="view-all">すべてのサービスを見る →</a>
+      <script src="/assets/services.js"></script>
+      <script>renderServices('services-grid');</script>
     </div>
   </div>
 

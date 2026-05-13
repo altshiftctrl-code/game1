@@ -149,7 +149,8 @@ footer p {
   transition: transform 0.25s, box-shadow 0.25s;
   text-decoration: none;
   color: inherit;
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 .service-card:hover {
@@ -192,6 +193,7 @@ footer p {
   color: var(--text-secondary);
   line-height: 1.65;
   margin-bottom: 20px;
+  flex: 1;
 }
 
 .badge {
